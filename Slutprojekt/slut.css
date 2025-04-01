@@ -1,0 +1,27 @@
+.Mapps{
+    height: 250px;
+    width: 350px;
+    
+  
+    display: flex;
+    border: 2px solid lightblue;
+    background-color: black;
+    color: wheat;
+
+
+}
+
+.place{
+    background-color: black;
+}
+
+#Paris{
+    height: 100px;
+    width: 100px;
+    
+}
+
+#Big_Ben {
+    height: 100px;
+    width: 100px;
+}
