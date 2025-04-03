@@ -1,27 +1,44 @@
 .Mapps{
     height: 250px;
     width: 350px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    display: grid;
+    grid-template-areas: 
+    "Paris Lady Ben"
     
-  
-    display: flex;
-    border: 2px solid lightblue;
-    background-color: black;
-    color: wheat;
 
+    
+    ;
 
 }
 
-.place{
+.Place{
     background-color: black;
+    border: 2px solid lightblue;
+    color: wheat;
+
+    padding: 150px;
 }
 
 #Paris{
     height: 100px;
-    width: 100px;
-    
+    width: 120px;
+    display: block;
+    grid-area: Paris;
 }
 
 #Big_Ben {
     height: 100px;
     width: 100px;
+    display: block;
+    grid-area: Ben;
+}
+    
+#Lady_liberty {
+    height: 100px;
+    width: 100px;
+    display: block;
+    grid-area: Lady;
+
 }
