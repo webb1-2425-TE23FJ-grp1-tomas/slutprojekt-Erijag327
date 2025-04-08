@@ -5,11 +5,49 @@
     grid-template-rows: 1fr 1fr 1fr ;
     display: grid;
     grid-template-areas: 
-    "Paris Lady Ben"
+    "Paris Lady Ben Budd"
     
 
-    
     ;
+
+/*platta */
+@media screen and (min-width: 600px ) {
+    * {
+        
+    }
+
+    .Mapps {
+        grid-template-columns: 1fr  ;
+        gap: 10px;
+        grid-template-areas: 
+        "Paris"
+        "Lady"
+        "Ben"
+        "Budd"
+        ;
+    }
+}
+
+/*desktop*/
+@media screen and (min-width:960px ) {
+    *{
+        
+    }
+
+    .Mapps {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+/*stora desktop*/
+@media screen and (min-width:1360px) {
+    * {
+        
+    }
+
+
+
 
 }
 
@@ -22,23 +60,24 @@
 }
 
 #Paris{
-    height: 100px;
-    width: 120px;
     display: block;
     grid-area: Paris;
 }
 
 #Big_Ben {
-    height: 100px;
-    width: 100px;
+    width: 95px;
     display: block;
     grid-area: Ben;
 }
     
 #Lady_liberty {
-    height: 100px;
-    width: 100px;
+ 
     display: block;
     grid-area: Lady;
+}
 
+#Buddha {
+    display: block;
+    grid-area: Budd;
+}
 }
