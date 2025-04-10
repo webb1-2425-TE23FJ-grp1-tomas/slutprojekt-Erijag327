@@ -1,63 +1,52 @@
+
+*{
+    background-color: darkcyan;
+}
+
 .Mapps{
-    height: 250px;
-    width: 350px;
+   
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr ;
+    display: block;
     display: grid;
     grid-template-areas: 
-    "Paris Lady Ben Budd"
-    
+    "Paris Ben Lady Budd"
 
-    ;
-
-/*platta */
-@media screen and (min-width: 600px ) {
-    * {
-        
-    }
-
-    .Mapps {
-        grid-template-columns: 1fr  ;
-        gap: 10px;
-        grid-template-areas: 
-        "Paris"
-        "Lady"
-        "Ben"
-        "Budd"
-        ;
-    }
+    ;   
 }
 
-/*desktop*/
-@media screen and (min-width:960px ) {
-    *{
-        
-    }
-
-    .Mapps {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-    }
-}
-
-/*stora desktop*/
-@media screen and (min-width:1360px) {
-    * {
-        
-    }
 
 
 
 
+
+
+body{
+    overflow: hidden;
+    background-color: darkcyan;
+    color: wheat;
 }
 
 .Place{
-    background-color: black;
-    border: 2px solid lightblue;
+    border: 2px solid lightgoldenrodyellow;
+    background-color: darkgreen;
     color: wheat;
-
     padding: 150px;
 }
+
+
+@media screen and (max-width: 1000px) {
+    *{
+        background-color: aliceblue;
+    } 
+    .Place{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+
+    }
+
+}
+
 
 #Paris{
     display: block;
@@ -65,7 +54,6 @@
 }
 
 #Big_Ben {
-    width: 95px;
     display: block;
     grid-area: Ben;
 }
@@ -79,5 +67,4 @@
 #Buddha {
     display: block;
     grid-area: Budd;
-}
 }
