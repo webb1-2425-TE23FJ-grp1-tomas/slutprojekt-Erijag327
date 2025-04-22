@@ -1,6 +1,6 @@
 
 *{
-    background-color: darkcyan;
+    
 }
 
 .Mapps{
@@ -32,25 +32,50 @@ body{
     background-color: darkgreen;
     color: wheat;
     padding: 150px;
+    border-radius: 20px;
+
 }
 
-
-@media screen and (max-width: 1000px) {
-    *{
-        background-color: aliceblue;
-    } 
-    .Place{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-
+@media screen and (min-width: 320px) {
+    .Mapps{
+      grid-template-columns: 1fr; /* En kolumn */
+      grid-template-rows: auto;
+      display: grid;
+      grid-template-areas: 
+        "Paris"
+        "Ben"
+        "Lady"
+        "Budd";
     }
+    .Place {
+      padding: 80px; /* Anpassa padding efter behov */
+    }
+  }
 
-}
+@media screen and (min-width: 426px) {
+    .Mapps{
+      grid-template-columns: 1fr 1fr; /* Två kolumner */
+      grid-template-rows: auto;    /* Låt raderna skapas automatiskt */
+      display: grid; /* Se till att det fortfarande är en grid-container */
+      grid-template-areas: 
+        "Paris Ben"
+        "Lady Budd";
+    }
+    /* Du behöver eventuellt justera padding för .Place-elementen
+       så att de ser bra ut i den nya layouten */
+    .Place {
+      padding: 50px; /* Exempel på minskad padding */
+    }
+  }
+
+
+
 
 
 #Paris{
     display: block;
     grid-area: Paris;
+    
 }
 
 #Big_Ben {
