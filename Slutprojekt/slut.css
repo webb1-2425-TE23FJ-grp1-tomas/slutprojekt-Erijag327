@@ -9,6 +9,10 @@
     grid-template-rows: 1fr 1fr 1fr ;
     display: block;
     display: grid;
+    height: auto;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
     grid-template-areas: 
     "Paris Ben Lady Budd"
 
@@ -19,7 +23,7 @@
 
 body{
     overflow: hidden;
-    background-color: darkcyan;
+    background-color: gray;
     color: wheat;
 }
 
@@ -29,12 +33,6 @@ body{
     color: wheat;
     padding: 150px;
     border-radius: 20px;
-
-}
-.Scroll-cont {
-height: auto;
-overflow-y: scroll;
-scroll-behavior: smooth;
 
 }
 
