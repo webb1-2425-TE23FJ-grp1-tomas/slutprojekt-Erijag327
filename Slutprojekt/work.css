@@ -1,16 +1,18 @@
 
-.pice{
+.Big_ben{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     display: block;
     display: grid; 
-    background-color: darkgreen;
-}
-.body{
-    overflow: hidden;
-    background-color: gray;
+    background-color: gray
 }
 
+
+body{
+    overflow: hidden;
+    background-color: gray;
+    color: wheat;
+}
 .pice{
     border: 2px solid lightgoldenrodyellow;
     background-color: darkgreen;
