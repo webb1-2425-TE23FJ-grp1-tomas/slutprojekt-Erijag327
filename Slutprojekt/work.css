@@ -9,9 +9,9 @@
 
 
 body{
-    overflow: hidden;
     background-color: gray;
     color: wheat;
+    font-family: 'Courier New', Courier, monospace;
 }
 .pice{
     border: 2px solid lightgoldenrodyellow;

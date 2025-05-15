@@ -10,8 +10,8 @@
     display: block;
     display: grid;
     height: auto;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+    /*overflow-y: scroll;
+    scroll-behavior: smooth;*/
 
     grid-template-areas: 
     "Paris Ben Lady Budd"
@@ -22,9 +22,9 @@
 
 
 body{
-    overflow: hidden;
     background-color: gray;
     color: wheat;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .Place{
