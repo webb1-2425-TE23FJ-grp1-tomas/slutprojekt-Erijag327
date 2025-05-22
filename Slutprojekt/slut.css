@@ -94,3 +94,7 @@ body{
     display: block;
     grid-area: Budd;
 }
+
+#hand{
+  display: block;
+}
