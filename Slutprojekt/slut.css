@@ -15,8 +15,9 @@
 
     grid-template-areas: 
     "Paris Ben Lady Budd"
-
     ;   
+
+    
 }
 
 
@@ -82,19 +83,18 @@ body{
 #Big_Ben {
     display: block;
     grid-area: Ben;
-}
+    
+  }
     
 #Lady_liberty {
  
     display: block;
     grid-area: Lady;
+    
 }
 
 #Buddha {
     display: block;
     grid-area: Budd;
-}
+    
 
-#hand{
-  display: block;
-}
